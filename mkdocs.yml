@@ -1,0 +1,34 @@
+site_name: llm-chat-message
+site_url: https://johanneslatzel.github.io/llm-chat-message/
+repo_url: https://github.com/johanneslatzel/llm-chat-message
+theme:
+  name: material
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+nav:
+  - Overview: index.md
+  - Quick Start: quickstart.md
+  - Messages and Roles: messages.md
+  - Writers: writers.md
+  - Architecture: architecture.md
+  - API Reference: api-reference.md
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+plugins:
+  - search
